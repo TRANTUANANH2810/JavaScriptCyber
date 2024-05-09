@@ -101,3 +101,21 @@ document.getElementById("xepLoai").onclick = function () {
     inputEleLy.value = "";
     inputEleHoa.value = "";
 };
+
+document.getElementById("btn").onclick = function () {
+    var hoa1Ele = document.getElementById("hoa1");
+    var hoa1Value = Math.floor(Number(hoa1Ele.value));
+    debugger;
+    if (hoa1Ele.value == "") {
+        alert(" vui long nhap vao  ::: ");
+    } else {
+        if (hoa1Value > 12 || hoa1Value <= 0) {
+            alert(" chi co 12 thang");
+        } else {
+            document.getElementById("hoc-luc").innerHTML =
+                " Thang :::" + hoa1Value;
+        }
+    }
+
+    hoa1Ele.value = "";
+};
