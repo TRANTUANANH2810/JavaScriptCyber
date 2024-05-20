@@ -111,8 +111,6 @@ function whileTinhTong(n) {
 
         count++;
     }
-
-    return tong;
 }
 
 function doWhileTinhTong(n) {
